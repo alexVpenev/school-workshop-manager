@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36578B35-1BDE-490F-809C-D5B811FC2C86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WorkshopManagement</RootNamespace>
+    <AssemblyName>WorkshopManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreatePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePerson.Designer.cs">
+      <DependentUpon>CreatePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateWorkshop.Designer.cs">
+      <DependentUpon>CreateWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPerson.Designer.cs">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWorkshop.Designer.cs">
+      <DependentUpon>EditWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollStudent.Designer.cs">
+      <DependentUpon>EnrollStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InBuilding.cs" />
+    <Compile Include="Online.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Teacher.cs" />
+    <Compile Include="ViewPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPerson.Designer.cs">
+      <DependentUpon>ViewPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWorkshop.Designer.cs">
+      <DependentUpon>ViewWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workshop.cs" />
+    <Compile Include="WorkshopManagement.cs" />
+    <EmbeddedResource Include="CreatePerson.resx">
+      <DependentUpon>CreatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateWorkshop.resx">
+      <DependentUpon>CreateWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPerson.resx">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWorkshop.resx">
+      <DependentUpon>EditWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollStudent.resx">
+      <DependentUpon>EnrollStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ViewPerson.resx">
+      <DependentUpon>ViewPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWorkshop.resx">
+      <DependentUpon>ViewWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
